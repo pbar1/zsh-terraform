@@ -18,3 +18,7 @@ tfa(){
 tfc(){
   terraform console -var-file=vars/$(terraform workspace show).tfvars
 }
+
+tfd(){
+  terraform destroy -var-file=vars/$(terraform workspace show).tfvars
+}
