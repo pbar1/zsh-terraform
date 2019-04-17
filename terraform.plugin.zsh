@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
 
 alias tf=terraform
-alias tfw="terraform workspace"
+alias tfw='terraform workspace'
+alias tg=terragrunt
 
 tfv(){
   terraform validate -var-file=vars/$(terraform workspace show).tfvars
